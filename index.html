@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174a32">
+  <meta name="description" content="EcoSort Daet: a community guide to waste segregation, recycling, and cleaner neighborhoods in Daet, Camarines Norte.">
+  <title>EcoSort Daet | A cleaner Daet starts with you</title>
+  <style>
+    :root{--green:#174a32;--green-2:#24734a;--lime:#c8e66a;--cream:#f7f6ef;--ink:#17251c;--muted:#607067;--white:#fff;--line:#e4e9df;--shadow:0 18px 50px #173b2812}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}button{font:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:5;background:#f7f6efeb;backdrop-filter:blur(14px);border-bottom:1px solid #e4e9df}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:850;font-size:1.15rem;letter-spacing:-.04em}.brand-icon{width:37px;height:37px;display:grid;place-items:center;background:var(--green);color:var(--lime);border-radius:12px;font-size:20px}.nav-links{display:flex;align-items:center;gap:28px}.nav-links a{text-decoration:none;color:#405249;font-size:.92rem;font-weight:650}.nav-links a:hover{color:var(--green-2)}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border:0;border-radius:999px;background:var(--green);color:white;text-decoration:none;font-weight:750;cursor:pointer;transition:transform .2s,background .2s}.nav-cta:hover,.button:hover{background:#23613e;transform:translateY(-2px)}.menu{display:none;border:0;background:none;color:var(--green);font-size:1.5rem}
+    .hero{position:relative;overflow:hidden;padding:74px 0 86px;background:radial-gradient(ellipse at 86% 20%,#c8e66a55,transparent 35%),linear-gradient(115deg,#f7f6ef 30%,#edf4df)}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid #dce7d7;border-radius:999px;background:#ffffffa8;color:var(--green-2);font-size:.82rem;font-weight:750}.eyebrow span{width:8px;height:8px;background:#81b945;border-radius:50%}h1{max-width:650px;margin:20px 0;font-size:clamp(3rem,6.2vw,5.25rem);line-height:.98;letter-spacing:-.075em;color:var(--green)}h1 em{color:#76a83a;font-style:normal}.hero p{max-width:520px;color:#53645a;font-size:1.1rem}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.button.secondary{background:transparent;color:var(--green);border:1px solid #cbd8cc}.button.secondary:hover{background:white}.hero-note{margin-top:20px;font-size:.83rem;color:#6b796e}.visual{position:relative;min-height:400px;display:grid;place-items:center}.circle{position:absolute;width:340px;height:340px;border-radius:50%;background:#c8e66a}.visual-card{position:relative;width:min(360px,100%);padding:24px;border:1px solid #ffffffb3;border-radius:26px;background:#ffffffdb;box-shadow:var(--shadow);transform:rotate(2deg)}.visual-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.82rem;font-weight:700}.visual-top b{color:var(--green)}.sort-illustration{height:190px;display:grid;place-items:center;font-size:7.8rem;line-height:1}.bins{display:flex;gap:9px}.bin{flex:1;padding:12px 8px;border-radius:13px;text-align:center;background:#edf5e6;color:var(--green);font-size:.72rem;font-weight:750}.bin span{display:block;font-size:1.4rem;margin-bottom:3px}.float-tag{position:absolute;padding:12px 15px;border-radius:15px;background:#fff;box-shadow:var(--shadow);font-size:.84rem;font-weight:800}.tag-one{top:48px;right:-20px;transform:rotate(5deg)}.tag-two{bottom:42px;left:-18px;transform:rotate(-5deg)}
+    section{padding:82px 0}.section-head{max-width:650px;margin:0 auto 38px;text-align:center}.kicker{color:#689437;text-transform:uppercase;letter-spacing:.13em;font-size:.75rem;font-weight:850}.section-head h2,.split h2{margin:10px 0 12px;color:var(--green);font-size:clamp(2rem,4vw,3rem);line-height:1.08;letter-spacing:-.055em}.section-head p,.split p{margin:0;color:var(--muted)}.guide-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.guide-card{padding:23px;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:0 8px 24px #173b2806}.guide-card .emoji{width:49px;height:49px;display:grid;place-items:center;margin-bottom:20px;border-radius:15px;background:#eef5e5;font-size:1.55rem}.guide-card h3{margin:0 0 7px;color:var(--green);font-size:1.05rem}.guide-card p{margin:0;color:var(--muted);font-size:.9rem}.guide-card .hint{display:block;margin-top:13px;padding-top:12px;border-top:1px solid var(--line);color:#68834b;font-size:.78rem;font-weight:700}
+    .quiz-section{background:#174a32;color:#fff}.quiz-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center}.quiz-section .kicker{color:var(--lime)}.quiz-section h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;letter-spacing:-.05em;margin:10px 0}.quiz-section p{color:#d2dfd3}.quiz-box{padding:26px;border-radius:22px;background:#fff;color:var(--ink)}.quiz-box h3{margin:0 0 7px;color:var(--green)}.quiz-box p{color:var(--muted);margin:0 0 17px}.quiz-items{display:flex;flex-wrap:wrap;gap:10px}.quiz-items button{border:1px solid var(--line);border-radius:999px;padding:9px 14px;background:#fff;color:var(--ink);cursor:pointer}.quiz-items button:hover{border-color:#80aa52;background:#f5f9ef}.quiz-result{min-height:28px;margin-top:17px!important;color:var(--green)!important;font-weight:750}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:58px;align-items:center}.pledge-card{padding:28px;border-radius:23px;background:#edf4e5}.pledge-card h3{margin:0;color:var(--green);font-size:1.2rem}.pledge-card p{margin:8px 0 18px}.pledge-list{display:grid;gap:12px}.pledge-item{display:flex;gap:11px;align-items:flex-start;color:#405249}.check{flex:none;width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:var(--green);color:white;font-size:.8rem;font-weight:900}.local-note{margin-top:20px;padding:15px 17px;border-left:3px solid #8bae4b;background:#ffffffa8;color:#5a685f;font-size:.86rem}
+    .cta{padding:0 0 80px}.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:36px 40px;border-radius:24px;background:var(--lime)}.cta-inner h2{margin:0;color:var(--green);font-size:clamp(1.7rem,3vw,2.4rem);letter-spacing:-.05em}.cta-inner p{margin:5px 0 0;color:#435637}.cta-inner .button{background:var(--green);white-space:nowrap}footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-inner strong{color:var(--green)}
+    @media(max-width:850px){.hero-grid{gap:20px}.guide-grid{grid-template-columns:repeat(2,1fr)}.quiz-layout{gap:30px}.split{gap:30px}}
+    @media(max-width:650px){.wrap{width:min(100% - 30px,520px)}.nav{height:66px}.menu{display:block}.nav-links{display:none;position:absolute;top:65px;left:0;right:0;padding:16px 22px 22px;background:var(--cream);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:16px}.nav-links.open{display:flex}.nav-cta{text-align:center}.hero{padding:52px 0 50px}.hero-grid{grid-template-columns:1fr}.visual{min-height:345px;margin-top:5px}.circle{width:280px;height:280px}.visual-card{width:300px;padding:19px}.sort-illustration{height:155px;font-size:6.4rem}.tag-one{right:0}.tag-two{left:0}section{padding:62px 0}.guide-grid{gap:11px}.guide-card{padding:17px}.quiz-layout,.split{grid-template-columns:1fr}.quiz-layout{gap:24px}.cta{padding-bottom:55px}.cta-inner{align-items:flex-start;flex-direction:column;padding:27px}.footer-inner{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="EcoSort Daet home"><span class="brand-icon" aria-hidden="true">↻</span> EcoSort <span style="color:#7b9d45">Daet</span></a>
+      <button class="menu" id="menuButton" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#guide">Sort your waste</a><a href="#quiz">Quick sort</a><a href="#community">Our community</a><a class="nav-cta" href="#pledge">Take the pledge <span aria-hidden="true">→</span></a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow"><span></span> A community guide for Daet, Camarines Norte</span>
+          <h1>A cleaner Daet starts with <em>you.</em></h1>
+          <p>Small everyday choices make a big difference. Learn to sort waste, reduce what you throw away, and help keep our neighborhoods clean and thriving.</p>
+          <div class="hero-actions"><a class="button" href="#guide">Learn to sort <span aria-hidden="true">↓</span></a><a class="button secondary" href="#community">Explore the guide</a></div>
+          <div class="hero-note">Practical waste-sorting tips for homes, schools, and local businesses.</div>
+        </div>
+        <div class="visual" aria-label="Illustration of sorting everyday waste into separate bins">
+          <div class="circle"></div><div class="float-tag tag-one">🌱 Less waste, more life</div><div class="float-tag tag-two">♻️ Sort it right!</div>
+          <div class="visual-card"><div class="visual-top"><span>YOUR DAILY IMPACT</span><b>STARTS HERE</b></div><div class="sort-illustration" aria-hidden="true">🌍</div><div class="bins"><div class="bin"><span>🍌</span>ORGANIC</div><div class="bin"><span>🧴</span>RECYCLABLE</div><div class="bin"><span>🗑️</span>RESIDUAL</div></div></div>
+        </div>
+      </div>
+    </section>
+    <section id="guide">
+      <div class="wrap">
+        <div class="section-head"><span class="kicker">Know where it goes</span><h2>Sorting waste is easier than you think.</h2><p>Keep useful materials in circulation and prevent litter by separating waste at home, at school, and wherever you go.</p></div>
+        <div class="guide-grid">
+          <article class="guide-card"><div class="emoji" aria-hidden="true">🍃</div><h3>Biodegradable</h3><p>Food scraps, fruit and vegetable peels, and yard trimmings. Keep them separate for composting where available.</p><span class="hint">Tip: Avoid mixing in plastic or other packaging.</span></article>
+          <article class="guide-card"><div class="emoji" aria-hidden="true">♻️</div><h3>Recyclable</h3><p>Clean, dry paper, cardboard, glass, metal cans, and accepted plastic containers.</p><span class="hint">Tip: Rinse containers and check local acceptance.</span></article>
+          <article class="guide-card"><div class="emoji" aria-hidden="true">🧤</div><h3>Special waste</h3><p>Batteries, bulbs, electronics, and other potentially hazardous household items need careful handling.</p><span class="hint">Tip: Don't put these in regular mixed waste.</span></article>
+          <article class="guide-card"><div class="emoji" aria-hidden="true">🗑️</div><h3>Residual</h3><p>Items that cannot be reused, composted, or recycled through available local programs.</p><span class="hint">Tip: Reduce single-use items whenever possible.</span></article>
+        </div>
+      </div>
+    </section>
+    <section class="quiz-section" id="quiz">
+      <div class="wrap quiz-layout">
+        <div><span class="kicker">Try a quick sort</span><h2>Where does it go?</h2><p>Tap an item to see a general sorting suggestion. Local collection and recycling rules can vary, so check with your barangay or municipal office.</p></div>
+        <div class="quiz-box"><h3>Pick an everyday item</h3><p>We'll help you think through its next step.</p><div class="quiz-items" id="quizItems"><button data-answer="Usually biodegradable; keep it separate for composting if available.">🍌 Banana peel</button><button data-answer="Often recyclable when clean and dry; check what your local program accepts.">📦 Cardboard box</button><button data-answer="Special waste: keep it separate and ask about an appropriate drop-off point.">🔋 Used battery</button><button data-answer="Usually residual if it cannot be cleaned or accepted for recycling. Try to avoid single-use bags.">🛍️ Sachet wrapper</button></div><p class="quiz-result" id="quizResult" aria-live="polite">Choose an item to get a sorting suggestion.</p></div>
+      </div>
+    </section>
+    <section id="community">
+      <div class="wrap split">
+        <div><span class="kicker">Our place, our responsibility</span><h2>Make cleaner habits part of everyday life.</h2><p>EcoSort Daet is a community-focused information website concept for residents, students, and local businesses. Start with one habit: bring a reusable bag, separate food scraps, or keep recyclables clean and dry.</p><div class="local-note"><strong>Local information:</strong> Collection days, accepted recyclables, and special-waste drop-off arrangements may change. Please confirm current details with your barangay or the Municipality of Daet before setting waste out or bringing items to a facility.</div></div>
+        <div class="pledge-card" id="pledge"><h3>My EcoSort pledge</h3><p>Choose a few simple actions you can keep doing:</p><div class="pledge-list"><div class="pledge-item"><span class="check">✓</span><span>I will separate biodegradable, recyclable, residual, and special waste.</span></div><div class="pledge-item"><span class="check">✓</span><span>I will reuse bags, bottles, and containers when I can.</span></div><div class="pledge-item"><span class="check">✓</span><span>I will keep my surroundings clean and encourage others to do the same.</span></div></div></div>
+      </div>
+    </section>
+    <section class="cta"><div class="wrap cta-inner"><div><h2>Ready to make a little change?</h2><p>Start sorting today. Daet gets cleaner one good habit at a time.</p></div><a class="button" href="#guide">See the sorting guide <span aria-hidden="true">→</span></a></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><span><strong>EcoSort Daet</strong> · A cleaner community starts with us.</span><span>Community information concept · Daet, Camarines Norte</span></div></footer>
+  <script>
+    const menuButton=document.getElementById('menuButton');
+    const navLinks=document.getElementById('navLinks');
+    menuButton.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation')});
+    navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Open navigation')}));
+    document.querySelectorAll('#quizItems button').forEach(button=>button.addEventListener('click',()=>{document.getElementById('quizResult').textContent=button.dataset.answer}));
+  </script>
+</body>
+</html>
